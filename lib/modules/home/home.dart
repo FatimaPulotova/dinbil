@@ -1,5 +1,6 @@
 import 'package:dinbil/modules/test/test.dart';
 import 'package:dinbil/modules/view_99/names.dart';
+import 'package:dinbil/modules/view_date.dart';
 
 import 'package:flutter/material.dart';
 
@@ -93,7 +94,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Дин макалар')),
+                        child: Center(child: Text('Диний макалалар')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -113,7 +114,7 @@ class HomeView extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(30)),
-                          child: Center(child: Text('Аллахтын 99 ысымы')),
+                          child: const Center(child: Text('Аллахтын 99 ысымы')),
                         ),
                       ),
                       const SizedBox(
@@ -129,7 +130,7 @@ class HomeView extends StatelessWidget {
                       // ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Column(
@@ -138,9 +139,9 @@ class HomeView extends StatelessWidget {
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
-                            color: Color(0xfffffffff),
+                            color: const Color(0xfffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('duba')),
+                        child: const Center(child: Text('duba')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -151,7 +152,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Намаз\nУбактысы')),
+                        child: const Center(child: Text('Намаз\nУбактысы')),
                       ),
                       const SizedBox(
                         height: 10,
@@ -193,14 +194,25 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
+                      // GestureDetector(
+                      //   onTap: () {
+                      //     Navigator.push(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //           builder: (context) => const ImportantDate()),
+                      //     );
+                      //   },
+                      // ),
                       Container(
                         height: 150,
                         width: 120,
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('Исламдагы Маанилуу датта')),
+                        child: const Center(
+                            child: Text('Исламдагы Маанилуу дата')),
                       ),
+
                       const SizedBox(
                         height: 10,
                       ),
@@ -210,7 +222,7 @@ class HomeView extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(30)),
-                        child: Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
+                        child: const Center(child: Text('ИСЛАМ БАЛУЛУКТАРЫ')),
                       ),
                       const SizedBox(
                         height: 10,
