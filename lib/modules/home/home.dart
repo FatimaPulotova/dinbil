@@ -1,7 +1,8 @@
+import 'dart:ui';
+
+import 'package:dinbil/modules/ImportantDate/date.dart';
 import 'package:dinbil/modules/test/test.dart';
 import 'package:dinbil/modules/view_99/names.dart';
-import 'package:dinbil/modules/view_date.dart';
-
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -194,23 +195,38 @@ class HomeView extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      // GestureDetector(
-                      //   onTap: () {
-                      //     Navigator.push(
-                      //       context,
-                      //       MaterialPageRoute(
-                      //           builder: (context) => const ImportantDate()),
-                      //     );
-                      //   },
-                      // ),
-                      Container(
-                        height: 150,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(
-                            child: Text('Исламдагы Маанилуу дата')),
+
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ImportantDate()),
+                          );
+                        },
+                        child: Stack(children: [
+                          Container(
+                            height: 150,
+                            width: 120,
+                            decoration: BoxDecoration(
+                                image: const DecorationImage(
+                                    image: AssetImage('assets/Time_date.png')),
+                                color: const Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(30)),
+                            child: const Center(
+                                child: Padding(
+                              padding: EdgeInsets.only(top: 100),
+                              child: Text(
+                                'Маанилүү даталар',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(255, 4, 165, 154),
+                                ),
+                              ),
+                            )),
+                          ),
+                        ]),
                       ),
 
                       const SizedBox(
